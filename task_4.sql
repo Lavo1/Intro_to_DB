@@ -1,5 +1,3 @@
--- Print full description of the table 'books' without using DESCRIBE or EXPLAIN
-
 SELECT
     COLUMN_NAME,
     COLUMN_TYPE,
@@ -11,4 +9,4 @@ FROM
     INFORMATION_SCHEMA.COLUMNS
 WHERE
     TABLE_SCHEMA = DATABASE()
-    AND TABLE_NAME = 'Books';
+    AND TABLE_NAME = 'books';
